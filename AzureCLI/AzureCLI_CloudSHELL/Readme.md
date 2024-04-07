@@ -40,6 +40,7 @@ To learn more, see [Static website hosting in Azure Storage](https://learn.micro
       wget https://raw.githubusercontent.com/LeonidChetverikov/azurebootcamp/main/file/slides-minimal-00b341.html --output-document=site/static-azurebootcamp.html && \
       az storage blob upload-batch -s site -d '$web' --account-name azurebootcamp080424
    ```
+![ResultsOfFileUpload](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/e974eea9-ddab-4ee7-ac68-68b48b9b8eb5)
 
    
 
