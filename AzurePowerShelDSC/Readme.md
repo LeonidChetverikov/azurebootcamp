@@ -9,7 +9,7 @@ Create a new Virtual Mashine:
       New-AzVm -ResourceGroupName 'azurebootcamp-resource-group' `
                -Credential (Get-Credential) `
                -Name 'azurebootcamp-eastus-vm' `
-               -Location 'East US' `
+               -Location 'eastus' `
                -Image 'MicrosoftWindowsServer:WindowsServer:2022-datacenter-azure-edition:latest' `
                -VirtualNetworkName 'azurebootcamp-eastus-vnet' `
                -SubnetName 'azurebootcamp-eastus-subnet' `
