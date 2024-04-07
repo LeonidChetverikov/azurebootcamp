@@ -8,14 +8,15 @@
         },
         "storageAccountName": {
             "type": "string",
-            "defaultValue":"azurebootcampstorageaccount"
+            "defaultValue":"azurebootcampdemo"
         },
         "accountType": {
             "type": "string",
             "defaultValue":"LRS"
         },
         "kind": {
-            "type": "string"
+            "type": "string",
+            defaultValue":"StorageV2"
         },
         "minimumTlsVersion": {
             "type": "string",
