@@ -7,6 +7,7 @@ By Default create a new resource group using cloud shell -> PowerShell
 Create a new Virtual Mashine:
 ```
       New-AzVm -ResourceGroupName 'azurebootcamp-resource-group' `
+               -Credential (Get-Credential) `
                -Name 'azurebootcamp-eastus-vm' `
                -Location 'East US' `
                -Image 'MicrosoftWindowsServer:WindowsServer:2022-datacenter-azure-edition:latest' `
