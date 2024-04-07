@@ -48,7 +48,7 @@ To learn more, see [Static website hosting in Azure Storage](https://learn.micro
                               -g azurebootcamp-resource-group \
                               --query "primaryEndpoints.web" --output tsv
    ```
-   ![Link_and_open]()
+   ![Link_and_open](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/481115dd-59c6-4893-9107-ccabf6c46fd7)
 
    
 
