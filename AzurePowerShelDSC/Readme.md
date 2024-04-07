@@ -36,5 +36,14 @@ Create a new Virtual Mashine:
 
 
 5. Configure the following parameters for the **DSC extension**.
+   ![Configuration](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/d4e500ce-0fec-412b-8ae1-e7bed3708717)
+
+Check that DSC is applied:
+
+![DSCApplied](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/47576627-b1a5-4103-8aad-d00d196dbcad)
+
+# Visit default IIS page
+
+
    
 
