@@ -34,8 +34,8 @@
             with:
               azcliversion: 2.30.0
               inlineScript: |
-                          az deployment sub create --location eastus --template-file BICEP_Demo/rg.bicep && \
-                          az deployment group create --resource-group azurebootcamp --template-file BICEP_Demo/main.bicep
+                          az deployment sub create --location eastus --template-file BICEP_Demo/rg.bicep && az deployment group create --resource-group azurebootcamp --template-file BICEP_Demo/main.bicep
+                          
        
         
             
