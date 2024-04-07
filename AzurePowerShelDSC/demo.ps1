@@ -19,7 +19,7 @@ DestinationPath = 'C:\inetpub\wwwroot\MyWebsite'
 
 # Ensure the IIS service is running
 Service IIS {
-Ensure    = 'Running'
+Ensure    = 'Present'
 Name      = 'W3SVC'
 DependsOn = '[WindowsFeature]IIS'
 }
