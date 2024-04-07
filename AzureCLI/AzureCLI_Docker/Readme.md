@@ -15,14 +15,16 @@ The image can also be used as a base for your own deployments.
    Open in Web Browser page: [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) and enter * code shown *.
    ![AuthScreen](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/ef8432e4-f497-41f7-a332-4e0d2101a35f)
    ![SuccessAuth](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/477b19d2-c545-4c68-acbd-3b2f573cf80a)
+<details open>
+   <summary>Docker deployment of static wesite using azure CLI</summary>
 
-3. To create a general-purpose v2 storage account with Azure CLI, first create a new resource group by calling the az group create command.
+4. To create a general-purpose v2 storage account with Azure CLI, first create a new resource group by calling the az group create command.
 
    ```
       az group create --name azurebootcamp-resource-group --location eastus
    ```
 
-4. Create a standard general-purpose v2 storage account with read-access geo-redundant storage by using the az storage account create command. Remember that the name of your storage account must be unique across Azure. Replace the placeholder(azurebootcamp080424) value with your own unique value
+5. Create a standard general-purpose v2 storage account with read-access geo-redundant storage by using the az storage account create command. Remember that the name of your storage account must be unique across Azure. Replace the placeholder(azurebootcamp080424) value with your own unique value
 
    ```
       az storage account create  --name azurebootcamp080424 \
@@ -61,4 +63,4 @@ The image can also be used as a base for your own deployments.
    ```
    ![Link_and_open](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/481115dd-59c6-4893-9107-ccabf6c46fd7)
 
-
+</details>
