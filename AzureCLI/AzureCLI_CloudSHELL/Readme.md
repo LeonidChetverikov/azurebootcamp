@@ -7,9 +7,11 @@ To learn more, see [Static website hosting in Azure Storage](https://learn.micro
 ![https://portal.azure.com](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/bd52bf29-9a8e-49f0-9a52-7e515d3a7281)
 2. To create a general-purpose v2 storage account with Azure CLI, first create a new resource group by calling the az group create command.
 
-   ``` az group create --name azurebootcamp-resource-group --location eastus ```
+   ```
+      az group create --name azurebootcamp-resource-group --location eastus
+   ```
 
-3. Create a standard general-purpose v2 storage account with read-access geo-redundant storage by using the az storage account create command. Remember that the name of your storage account must be unique across Azure. Replace the placeholder(azurebootcamp080424) value with your own unique value
+4. Create a standard general-purpose v2 storage account with read-access geo-redundant storage by using the az storage account create command. Remember that the name of your storage account must be unique across Azure. Replace the placeholder(azurebootcamp080424) value with your own unique value
 
    ```
       az storage account create  --name azurebootcamp080424 \
@@ -21,5 +23,24 @@ To learn more, see [Static website hosting in Azure Storage](https://learn.micro
    
 ![Running](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/bc478b72-3fb1-4433-b6f2-68f7bde27fd1)
 ![Finished](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/26ad1968-b6c3-4784-beb2-a5c5111b1480)
+
+4. Enable static website hosting.
+
+   ```
+      az storage blob service-properties update  --account-name azurebootcamp080424 \
+                                                 --static-website --404-document error.html \
+                                                 --index-document static-azurebootcamp.html
+   ```
+![Results](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/5751e9b6-ec05-44ce-a3b8-6246df5fc3a7)
+
+5. Upload objects to the $web container from a source directory.
+
+   ```
+      mkdir site && \
+      wget https://raw.githubusercontent.com/LeonidChetverikov/azurebootcamp/main/file/slides-minimal-00b341.html --output-document=site/static-azurebootcamp.html && \
+      az storage file upload -s./static-azurebootcamp.html -d '$web' --account-name azurebootcamp080424
+   ```
+
+   
 
 
