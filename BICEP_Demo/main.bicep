@@ -1,23 +1,21 @@
-targetScope = 'subscription'
+param storagePrefix string = 'Standard_LRS'
 
-param resourceGroupName string = 'myResourceGroup'
-param storageAccountName string = 'azurebootcampdemo'
-param location string = 'eastus'
-param sku string = 'Standard_LRS'
+param storageSKU string = 'Standard_LRS'
 
-resource newResourceGroup 'Microsoft.Resources/resourceGroups@2022-09-01' = {
-name: resourceGroupName
-location: lacation
+param location string = resourceGroup().location
+
+var uniqueStorageName = '${storagePrefix}${uniqueString(resourceGroup().id)}'
+
+resource stg 'Microsoft.Storage/storageAccounts@2021-04-01' = {
+  name: uniqueStorageName
+  location: location
+  sku: {
+    name: storageSKU
+  }
+  kind: 'StorageV2'
+  properties: {
+    supportsHttpsTrafficOnly: true
+  }
 }
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
-name: storageAccountName
-location: location
-sku: {
-name: sku
-}
-kind: 'StorageV2'
-properties: {
-supportsHttpsTrafficOnly: true
-}
-}
+output storageEndpoint object = stg.properties.primaryEndpoints
