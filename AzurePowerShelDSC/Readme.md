@@ -30,6 +30,11 @@ Create a new Virtual Mashine:
 
 4. Select **PowerShell Desired State Configuration**, then select *Next*.
 
+![Extensions](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/8db3b5cf-8319-49a2-ab74-24810d30ef09)
+![Next](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/79439736-749b-4c8c-812a-693c1b9f477b)
+
+
+
 5. Configure the following parameters for the **DSC extension**.
    
 
