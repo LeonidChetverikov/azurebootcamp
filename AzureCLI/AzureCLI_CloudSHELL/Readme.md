@@ -42,6 +42,14 @@ To learn more, see [Static website hosting in Azure Storage](https://learn.micro
    ```
 ![ResultsOfFileUpload](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/e974eea9-ddab-4ee7-ac68-68b48b9b8eb5)
 
+6. Find the public URL of your static website by using the following command:
+   ```
+      az storage account show -n azurebootcamp080424 \
+                              -g azurebootcamp-resource-group \
+                              --query "primaryEndpoints.web" --output tsv
+   ```
+   ![Link_and_open]()
+
    
 
 
