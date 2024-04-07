@@ -19,4 +19,7 @@ To learn more, see [Static website hosting in Azure Storage](https://learn.micro
                                  --allow-blob-public-access true
    ```
    
+![Running](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/bc478b72-3fb1-4433-b6f2-68f7bde27fd1)
+![Finished](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/26ad1968-b6c3-4784-beb2-a5c5111b1480)
+
 
