@@ -33,9 +33,6 @@ The image can also be used as a base for your own deployments.
                                  --kind StorageV2 \
                                  --allow-blob-public-access true
    ```
-   
-![Running](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/bc478b72-3fb1-4433-b6f2-68f7bde27fd1)
-![Finished](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/26ad1968-b6c3-4784-beb2-a5c5111b1480)
 
 5. Enable static website hosting.
 
@@ -44,7 +41,6 @@ The image can also be used as a base for your own deployments.
                                                  --static-website --404-document error.html \
                                                  --index-document static-azurebootcamp.html
    ```
-![Results](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/5751e9b6-ec05-44ce-a3b8-6246df5fc3a7)
 
 6. Upload objects to the $web container from a source directory.
 
@@ -53,7 +49,6 @@ The image can also be used as a base for your own deployments.
       wget https://raw.githubusercontent.com/LeonidChetverikov/azurebootcamp/main/file/slides-minimal-00b341.html --output-document=site/static-azurebootcamp.html && \
       az storage blob upload-batch -s site -d '$web' --account-name azurebootcamp080424
    ```
-![ResultsOfFileUpload](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/e974eea9-ddab-4ee7-ac68-68b48b9b8eb5)
 
 7. Find the public URL of your static website by using the following command:
    ```
@@ -61,6 +56,5 @@ The image can also be used as a base for your own deployments.
                               -g azurebootcamp-resource-group \
                               --query "primaryEndpoints.web" --output tsv
    ```
-   ![Link_and_open](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/481115dd-59c6-4893-9107-ccabf6c46fd7)
 
 </details>
