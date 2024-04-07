@@ -17,6 +17,8 @@ Create a new Virtual Mashine:
                -PublicIpAddressName 'azurebootcamp-eastus-pip' `
                -OpenPorts 80,3389
 ```
+![CreatingVM](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/0f19bcad-baae-4598-8d4d-9d901bfbfb6e)
+
 
 1. Go to a VM.
 
