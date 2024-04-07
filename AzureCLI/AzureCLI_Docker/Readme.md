@@ -15,7 +15,7 @@ The image can also be used as a base for your own deployments.
    Open in Web Browser page: [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) and enter * code shown *.
    ![AuthScreen](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/ef8432e4-f497-41f7-a332-4e0d2101a35f)
    ![SuccessAuth](https://github.com/LeonidChetverikov/azurebootcamp/assets/34073185/477b19d2-c545-4c68-acbd-3b2f573cf80a)
-<details open>
+<details>
    <summary>Docker deployment of static wesite using azure CLI</summary>
 
 4. To create a general-purpose v2 storage account with Azure CLI, first create a new resource group by calling the az group create command.
