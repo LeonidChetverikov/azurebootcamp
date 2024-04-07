@@ -12,10 +12,10 @@ To learn more, see [Static website hosting in Azure Storage](https://learn.micro
 3. Create a standard general-purpose v2 storage account with read-access geo-redundant storage by using the az storage account create command. Remember that the name of your storage account must be unique across Azure. Replace the placeholder(azurebootcamp080424) value with your own unique value
 
    ```
-      az storage account create  --name azurebootcamp080424 /
-                                 --resource-group azurebootcamp-resource-group /
-                                 --location eastus --sku Standard_RAGRS /
-                                 --kind StorageV2 /
+      az storage account create  --name azurebootcamp080424 \
+                                 --resource-group azurebootcamp-resource-group \
+                                 --location eastus --sku Standard_RAGRS \
+                                 --kind StorageV2 \
                                  --allow-blob-public-access true
    ```
    
