@@ -16,7 +16,7 @@
         },
         "kind": {
             "type": "string",
-            defaultValue":"StorageV2"
+            defaultValue": "StorageV2"
         },
         "minimumTlsVersion": {
             "type": "string",
